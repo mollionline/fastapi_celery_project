@@ -12,7 +12,8 @@ class BaseConfig:
     
     broker_url: str = os.environ.get("CELERY_BROKER_URL", "redis://127.0.0.1:6379/0")  # NEW
     result_backend: str = os.environ.get("RESULT_BACKEND", "redis://127.0.0.1:6379/0") # NEW
-
+    # CELERY_TASK_ALWAYS_EAGER: bool = True
+    
 class DevelopmentConfig(BaseConfig):
     pass
 
