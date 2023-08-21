@@ -14,6 +14,8 @@ class BaseConfig:
     result_backend: str = os.environ.get("RESULT_BACKEND", "redis://127.0.0.1:6379/0") # NEW
     # CELERY_TASK_ALWAYS_EAGER: bool = True
     
+    WS_MESSAGE_QUEUE: str = os.environ.get("WS_MESSAGE_QUEUE", "redis://127.0.0.1:6379/0")
+    
 class DevelopmentConfig(BaseConfig):
     pass
 
