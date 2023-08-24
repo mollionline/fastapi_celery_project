@@ -26,7 +26,9 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js" integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js" 
+    integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
       function updateProgress(yourForm, task_id, btnHtml) {
@@ -97,6 +99,7 @@
             .then((response) => response.json())
             .then((res) => {
               // after we get Celery task id, we start polling
+              console.log(res.result, 'response----')
               const task_id = res.task_id
               updateProgress(yourForm, task_id, btnHtml)
               console.log(res)
