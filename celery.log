@@ -441,3 +441,36 @@ NameError: name 'logger' is not defined[0m
 [2023-08-23 16:57:52,645: INFO/MainProcess] mingle: all alone
 [2023-08-23 16:57:52,669: INFO/MainProcess] celery@4183d67f9f3c ready.
 [2023-08-23 16:57:53,405: INFO/MainProcess] Events of group {task} enabled by remote.
+[2023-08-28 04:21:57,449: INFO/MainProcess] beat: Starting...
+[2023-08-28 04:21:58,573: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-08-28 04:22:03,593: INFO/MainProcess] mingle: searching for neighbors
+[2023-08-28 04:22:04,667: INFO/MainProcess] mingle: all alone
+[2023-08-28 04:22:04,695: INFO/MainProcess] celery@33638b69b189 ready.
+[2023-08-28 04:22:14,936: INFO/MainProcess] Events of group {task} enabled by remote.
+[2023-08-28 06:22:45,490: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-08-28 06:22:45,493: INFO/MainProcess] mingle: searching for neighbors
+[2023-08-28 06:22:51,531: INFO/MainProcess] mingle: all alone
+[2023-08-28 06:22:51,565: INFO/MainProcess] celery@33638b69b189 ready.
+[2023-08-28 06:22:53,871: INFO/MainProcess] Events of group {task} enabled by remote.
+[2023-08-28 06:23:06,066: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-08-28 06:23:06,070: INFO/MainProcess] mingle: searching for neighbors
+[2023-08-28 06:23:07,083: INFO/MainProcess] mingle: all alone
+[2023-08-28 06:23:07,107: INFO/MainProcess] celery@33638b69b189 ready.
+[2023-08-28 06:23:08,875: INFO/MainProcess] Events of group {task} enabled by remote.
+[2023-08-28 06:24:38,967: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-08-28 06:24:38,979: INFO/MainProcess] mingle: searching for neighbors
+[2023-08-28 06:24:39,994: INFO/MainProcess] mingle: all alone
+[2023-08-28 06:24:40,021: INFO/MainProcess] celery@33638b69b189 ready.
+[2023-08-28 06:24:43,874: INFO/MainProcess] Events of group {task} enabled by remote.
+[2023-08-28 06:25:33,255: WARNING/MainProcess] /usr/local/lib/python3.10/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_TASK_SERIALIZER' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the task_serializer instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2023-08-28 06:25:33,255: WARNING/MainProcess] Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+[2023-08-28 06:25:33,430: INFO/MainProcess] Connected to redis://redis:6379/0
+[2023-08-28 06:25:33,432: INFO/MainProcess] mingle: searching for neighbors
+[2023-08-28 06:25:39,457: INFO/MainProcess] mingle: all alone
+[2023-08-28 06:25:39,482: INFO/MainProcess] celery@33638b69b189 ready.
+[2023-08-28 06:25:43,876: INFO/MainProcess] Events of group {task} enabled by remote.

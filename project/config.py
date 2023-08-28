@@ -35,6 +35,12 @@ class BaseConfig:
 
     # Force all queues to be explicitly listed in `CELERY_TASK_QUEUES` to help prevent typos
     CELERY_TASK_CREATE_MISSING_QUEUES: bool = False
+    CELERY_WORKER_PREFETCH_MULTIPLIER = 1
+    CELERY_TASK_ACKS_LATE = True
+    # global example
+    CELERY_TASK_SOFT_TIME_LIMIT = 15 * 60
+    CELERY_TASK_TIME_LIMIT = CELERY_TASK_SOFT_TIME_LIMIT + 30
+    CELERY_TASK_SERIALIZER = 'json'
 
     CELERY_TASK_QUEUES: list = (
         # need to define default queue here or exception would be raised
